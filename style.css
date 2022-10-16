@@ -1,0 +1,130 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(90deg, #ad5389 0%, #3c1053 100%);
+  color: #fff;
+  padding: 1em;
+  overflow: hidden;
+}
+input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.wrapper {
+  min-width: 35rem;
+  padding: 4em 3em 2em;
+  border-radius: 1rem;
+  background-color: #f9f9f9;
+  color: #353535;
+}
+.form-group {
+  position: relative;
+  padding-bottom: 0.75em;
+}
+.form-group::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dadadb;
+  transition: all 300ms ease-in-out;
+}
+
+.form-group label {
+  position: absolute;
+  left: 0;
+  top: 0.125rem;
+  font-size: 1rem;
+  color: #8b8b8c;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+.form-group.active::before {
+  background-color: #1769aa;
+}
+.form-group.active label {
+  position: absolute;
+  top: -1.25rem;
+  left: 0;
+  font-size: 1.3rem;
+}
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.25em 0;
+  color: #353535;
+  font-size: 1.6rem;
+}
+.form-group .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.75rem;
+  color: #686868;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.form-group .icon .eye {
+  display: none;
+}
+.form-group .icon.active .eye {
+  display: block;
+}
+.form-group .icon.active .dots-menu {
+  display: none;
+}
+.tips {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;
+  font-size: 1.2rem;
+}
+.tips > * {
+  color: #6e6e6e;
+}
+
+.tips p {
+  margin-right: 2em;
+  font-size: inherit;
+  font-weight: 400;
+}
+.tips .count {
+  font-weight: 400;
+  color: #6e6e75;
+}
+.count.active {
+  color: #353535;
+  font-weight: 700;
+}
+.tips .upper,
+.tips .symbol,
+.tips .number {
+  transition: all 250ms ease-in-out;
+}
+.number.active,
+.symbol.active,
+.upper.active {
+  color: #0273c9;
+}

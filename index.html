@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Checker</title>
+    <!-- Link Phosphor icons CDN -->
+    <script src="https://unpkg.com/phosphor-icons" defer></script>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link JS file -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" class="form-group" method="POST" autocomplete="off">
+        <input type="password" id="passwd" autocomplete="on" />
+        <label for="passwd">Password</label>
+        <span class="icon">
+          <i class="ph-eye eye"></i>
+          <i class="ph-dots-three-outline-fill dots-menu"></i>
+        </span>
+      </form>
+      <div class="tips">
+        <p>
+          At least one
+          <span class="upper">uppercase</span>
+          ,
+          <span class="symbol">symbol</span>
+          ,
+          <span class="number">one number</span>
+        </p>
+        <div class="count">
+          <span class="from">0</span>
+          /
+          <span>6</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
