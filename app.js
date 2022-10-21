@@ -32,11 +32,11 @@ $(document).ready(function () {
 			$(".wrapper .symbol").removeClass("active");
 		}
 	});
-	$(".wrapper").on("click", ".form-group .icon:not(.active)", function () {
+	$(".wrapper").on("click", ".form-group .icons:not(.active)", function () {
 		$(this).addClass("active");
 		$(".wrapper input").attr("type", "text");
 	});
-	$(".wrapper").on("click", ".form-group .icon.active", function () {
+	$(".wrapper").on("click", ".form-group .icons.active", function () {
 		$(this).removeClass("active");
 		$(".wrapper input").attr("type", "password");
 	});

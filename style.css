@@ -75,7 +75,7 @@ input {
   color: #353535;
   font-size: 1.6rem;
 }
-.form-group .icon {
+.form-group .icons {
   display: block;
   position: absolute;
   top: 0;
@@ -85,13 +85,13 @@ input {
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
-.form-group .icon .hide {
+.form-group .icons .hide {
   display: none;
 }
-.form-group .icon.active .hide {
+.form-group .icons.active .hide {
   display: block;
 }
-.form-group .icon.active .show {
+.form-group .icons.active .show {
   display: none;
 }
 .tips {
