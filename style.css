@@ -85,13 +85,13 @@ input {
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
-.form-group .icon .eye {
+.form-group .icon .hide {
   display: none;
 }
-.form-group .icon.active .eye {
+.form-group .icon.active .hide {
   display: block;
 }
-.form-group .icon.active .dots-menu {
+.form-group .icon.active .show {
   display: none;
 }
 .tips {
