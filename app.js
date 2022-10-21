@@ -26,7 +26,7 @@ $(document).ready(function () {
 		} else {
 			$(".wrapper .upper").removeClass("active");
 		}
-		if (/[@$%&-+*]/.test($(this).val())) {
+		if (/[@$%&()+*]/.test($(this).val())) {
 			$(".wrapper .symbol").addClass("active");
 		} else {
 			$(".wrapper .symbol").removeClass("active");
